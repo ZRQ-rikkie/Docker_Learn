@@ -108,3 +108,51 @@ Most used commands:
 
 use `apt update` and then `apt install`
 using `ctrl + L` to clean the window
+
+## Linux File System
+
+`root` folder on top of the hierarchy:
+    `bin`,  `lib`,  `dev`, `home`(div for devices)....
+
+In linux, everything is a file
+
+**Navigating**
+
+```
+pwd
+ls
+
+cd ~
+<!-- back to root directory -->
+mv
+<!-- rename files or folders or move them somewhere else -->
+touch
+<!-- create new file (can create multiple files in one go)-->
+
+ctrl+W
+<!-- delete in one go -->
+
+rm
+<!-- remove files -->
+
+rm -r
+<!-- remove directories -->
+
+cat
+<!-- show the content -->
+more
+<!-- show part of the content -->
+less
+<!-- press up and down arrows and press q to quite -->
+head -n 5
+<!-- show the first five lines -->
+tail -n 5
+<!-- show the last five lines -->
+
+cat file1.txt > file2.txt
+<!-- redirect the file -->
+cat file1.txt file2.txt >combined.txt
+echo hello > hello.txt
+```
+less
+
