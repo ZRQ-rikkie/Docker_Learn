@@ -1,4 +1,3 @@
-
 ## Virtual Machine vs Container
 
 **Virtual Machine:** An abstraction of a machine(physical hardware). Using hyperviser to run virtual machines.
@@ -177,4 +176,25 @@ find -type f
 find -type f -name "*f"
 find -type f -iname "F"
 find / -type f -name "*.py"
+```
+
+**Chaining Commands**
+
+```
+mkdir test;cd test;echo done
+mkdir test&&cd test&&echo done
+<!-- if one command fails, the other commands wont be executed -->
+mkdir test||cd test||echo done
+ls /bin | less
+<!-- build a pipe -->
+root@a63cfb76d68f:~# mkdir hello;\
+> cd hello;\
+> echo done
+
+```
+
+**Environment Variables**
+
+```
+
 ```
