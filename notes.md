@@ -154,5 +154,27 @@ cat file1.txt > file2.txt
 cat file1.txt file2.txt >combined.txt
 echo hello > hello.txt
 ```
-less
 
+**Search for text**
+
+```
+grep hello file1.txt
+grep -i hello file1.txt
+<!-- -i means case insensitive -->
+grep -i root /etc/passwd
+grep -i hello file*
+grep -i -r hello .
+<!-- r:search this directury and all its sub directory recursively -->
+grep -ir hello .
+<!-- combine the instructions -->
+
+find
+?finding files in directory
+find -type d
+<!-- search all the directory inside the current directory -->
+find -type f
+<!-- search all the files inside the current directory -->
+find -type f -name "*f"
+find -type f -iname "F"
+find / -type f -name "*.py"
+```
