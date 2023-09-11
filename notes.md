@@ -21,6 +21,8 @@
 **Container:**
 A container is like a process
 All container share the OS of the host (share the kernel of the host)
+provides an isolated environment.
+
 **Kernel:**
 A kernel is the core of the OS, it manages applications and hardware resources.
 Every OS has its own kernel/engine. Different Kernel has different APIs
@@ -48,3 +50,18 @@ Ask docker to start a **container** to use that **image**.
 Container is a special process has its own file system provided by the image.
 
 ![1694199409529](image/notes/1694199409529.png)
+
+## Building Images
+
+container:
+
+* Procides an isolated environment
+* Can be stopped & restarted
+* Is just a process
+
+## Dockerize a frontend application
+
+**Steps:**
+
+* Install Node
+* npm install
